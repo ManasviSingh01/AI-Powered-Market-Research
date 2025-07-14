@@ -1,86 +1,66 @@
-🌐 Dymra Tech – AI-Powered Market Research Dashboard
+# 🌐 Dymra Tech – AI-Powered Market Research Dashboard
 
-Welcome to Dymra Tech's AI Market Research Dashboard, your one-stop solution for analyzing global trade leads and discovering product demand trends using intelligent data visualizations and forecasting models.
+Welcome to **Dymra Tech's AI-Powered Market Research Dashboard**, your comprehensive toolkit to uncover global trade insights, visualize demand trends, and forecast future opportunities with AI-driven precision.
 
-✨ Features
+---
 
-📄 CSV Upload: Import your trade lead datasets
+## ✨ Features
 
-🔍 Filter by Region & Product: Narrow down leads
+* 📤 **Upload Trade Lead CSV** – Seamlessly import your trade data.
+* 🧭 **Smart Filters** – Drill down into regions and products.
+* 📊 **Interactive Visuals** – Stunning charts for regional and product-based trade insights.
+* 📈 **Demand Forecasting** – Predict future trends using Facebook Prophet.
+* 📥 **One-Click Download** – Export filtered lead data instantly.
+* 🖼️ **Custom Watermark Branding** – Brand-embedded UI with your watermark.
 
-📊 Interactive Charts: Visualize trade value, product demand, and regional distribution
 
-⏰ Forecasting: Predict future demand with Facebook Prophet
+---
 
-🔄 Downloadable Reports: Export filtered data instantly
+## 🚀 Quickstart Guide
 
-🖼️ Watermarked UI: Company branding embedded
-
-📦 Files Required
-
-File
-
-Description
-
-market research.py
-
-Main dashboard application
-
-extended_trade_leads.csv
-
-Sample trade lead data (optional)
-
-dymra_watermark.png
-
-Logo watermark image (bottom-right overlay)
-
-🚀 Getting Started
-
-1. Clone and Setup Environment
-
-python3 -m venv ai-leadgen-env
-source ai-leadgen-env/bin/activate
-pip install streamlit pandas plotly prophet
-
-2. Run the App
-
-streamlit run "market research.py"
-
-⚠️ Ensure the watermark image is in the same directory.
-
-📈 Insights You Can Generate
-
-Total trade value by region
-
-Distribution of leads by product and region
-
-Top 10 most traded products
-
-Forecasted demand for selected products
-
-🔧 Tech Stack
-
-Python 3.9+
-
-Streamlit
-
-Plotly
-
-Prophet (Forecasting)
-
-Pandas
-
-🌍 Who Is This For?
-
-Export/Import Analysts
-
-Trade Consultants
-
-Government Trade Boards
-
-Market Research Professionals
+### 1. Set up your environment
 
 ```bash
 python3 -m venv ai-leadgen-env
 source ai-leadgen-env/bin/activate
 pip install streamlit pandas plotly prophet
+```
+
+### 2. Launch the dashboard
+
+```bash
+streamlit run "market research.py"
+```
+
+📌 **Note**: Ensure the watermark image is saved in the same directory as your Python file.
+
+---
+
+## 📈 Dashboard Insights
+
+* 💰 **Trade Value by Region**: Understand your most valuable markets
+* 🗺️ **Leads by Region**: Visual breakdown of global demand
+* 🏆 **Top Products**: Know your highest-performing commodities
+* 🔮 **Demand Forecasting**: See the future trend of product demand
+
+---
+
+## 🛠️ Built With
+
+* **Python 3.9+**
+* **Streamlit** – Web UI framework
+* **Plotly** – Charting and interactive visualizations
+* **Prophet** – Time-series forecasting (Meta/Facebook)
+* **Pandas** – Data processing
+
+---
+
+## 👤 Ideal For
+
+* 🌍 **Exporters & Importers**
+* 📊 **Market Analysts & Consultants**
+* 🏢 **Government Trade Promotion Bodies**
+* 📈 **Global Trade Researchers**
+
+---
+
