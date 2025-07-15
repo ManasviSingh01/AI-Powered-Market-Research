@@ -2,12 +2,30 @@ import streamlit as st
 import pandas as pd
 import plotly.express as px
 from prophet import Prophet
-import io
+from PIL import Image
+import base64
 
 # === PAGE SETUP ===
-st.set_page_config(page_title="Dymra Market Research", layout="wide")
+st.set_page_config(page_title="Dymra Market Research", layout="wide", page_icon="📈")
 
-# === HEADER ===
+# === LOGO + TITLE ===
+def show_logo_and_title():
+    with open("dymra_logo.jpg", "rb") as img_file:
+        encoded = base64.b64encode(img_file.read()).decode()
+
+    st.markdown(f"""
+        <div style='background-color: #0e1117; padding: 25px 15px; display: flex; align-items: center;'>
+            <img src='data:image/jpg;base64,{encoded}' style='height: 80px; margin-right: 25px;'/>
+            <div>
+                <h1 style='color: white; margin: 0;'>HS Code Classifier</h1>
+                <p style='color: #cfcfcf; margin-top: 5px;'>Enter product description</p>
+            </div>
+        </div>
+    """, unsafe_allow_html=True)
+
+show_logo_and_title()
+
+# === MAIN TITLE ===
 st.title("📈 AI-Powered Market Research – Dymra Tech")
 st.caption("Analyze trade leads, uncover trends, and find market expansion opportunities.")
 
@@ -97,6 +115,7 @@ if df is not None:
             st.text(str(e))
     else:
         st.info("No yearly trade data available for this product.")
+
 
 
 
